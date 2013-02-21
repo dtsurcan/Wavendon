@@ -1,0 +1,679 @@
+Now : 2013-01-19 05:18:02.  Time 0.0003 :
+SELECT *
+FROM (`wvd_user`)
+WHERE `id` =  '11'
+LIMIT 1
+
+
+Now : 2013-01-19 05:18:02.  Time 0.0003 :
+SELECT *
+FROM (`wvd_user`)
+WHERE `username` =  'Guarantor_11'
+AND `id` !=  '11'
+LIMIT 1
+
+
+Now : 2013-01-19 05:18:02.  Time 0.0002 :
+SELECT *
+FROM (`wvd_user`)
+WHERE `email` =  'Guarantor_11@mail.com'
+AND `id` !=  '11'
+LIMIT 1
+
+
+Now : 2013-01-19 05:18:02.  Time 0.0002 :
+SELECT *
+FROM (`wvd_user`)
+WHERE `passport` =  'passport_8'
+LIMIT 1
+
+
+Now : 2013-01-19 05:18:02.  Time 0.0002 :
+SELECT *
+FROM (`wvd_user`)
+WHERE `dln` =  'dln_11'
+LIMIT 1
+
+
+Now : 2013-01-19 05:18:03.  Time 0.0005 :
+SELECT *
+FROM (`wvd_user_notes`)
+WHERE `wvd_user_notes`.`user_id` =  '11'
+ORDER BY `created_at` desc
+
+
+Now : 2013-01-19 05:18:03.  Time 0.0009 :
+SELECT `wvd_tenant_guarantor`.*, `wvd_user`.`username`
+FROM (`wvd_tenant_guarantor`)
+RIGHT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_tenant_guarantor`.`guarantor_id`
+WHERE `wvd_tenant_guarantor`.`tenant_id` =  '11'
+ORDER BY `username`
+
+
+Now : 2013-01-19 05:18:03.  Time 0.0003 :
+SELECT `id`, `username`
+FROM (`wvd_user`)
+WHERE `type` =  'guarantor'
+ORDER BY `username`
+
+
+Now : 2013-01-19 05:18:16.  Time 0.0003 :
+SELECT *
+FROM (`wvd_user`)
+WHERE `id` =  '11'
+LIMIT 1
+
+
+Now : 2013-01-19 05:18:16.  Time 0.0003 :
+SELECT *
+FROM (`wvd_user`)
+WHERE `username` =  'Guarantor_11'
+AND `id` !=  '11'
+LIMIT 1
+
+
+Now : 2013-01-19 05:18:16.  Time 0.0003 :
+SELECT *
+FROM (`wvd_user`)
+WHERE `email` =  'Guarantor_11@mail.com'
+AND `id` !=  '11'
+LIMIT 1
+
+
+Now : 2013-01-19 05:18:16.  Time 0.0003 :
+SELECT *
+FROM (`wvd_user`)
+WHERE `passport` =  'passport_8'
+LIMIT 1
+
+
+Now : 2013-01-19 05:18:16.  Time 0.0002 :
+SELECT *
+FROM (`wvd_user`)
+WHERE `dln` =  'dln_11'
+LIMIT 1
+
+
+Now : 2013-01-19 05:18:16.  Time 0.0005 :
+SELECT *
+FROM (`wvd_user_notes`)
+WHERE `wvd_user_notes`.`user_id` =  '11'
+ORDER BY `created_at` desc
+
+
+Now : 2013-01-19 05:18:16.  Time 0.0004 :
+SELECT `wvd_tenant_guarantor`.*, `wvd_user`.`username`
+FROM (`wvd_tenant_guarantor`)
+RIGHT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_tenant_guarantor`.`guarantor_id`
+WHERE `wvd_tenant_guarantor`.`tenant_id` =  '11'
+ORDER BY `username`
+
+
+Now : 2013-01-19 05:18:16.  Time 0.0003 :
+SELECT `id`, `username`
+FROM (`wvd_user`)
+WHERE `type` =  'guarantor'
+ORDER BY `username`
+
+
+Now : 2013-01-19 05:19:12.  Time 0.0005 :
+SELECT *
+FROM (`wvd_user`)
+WHERE `id` =  '11'
+LIMIT 1
+
+
+Now : 2013-01-19 05:19:12.  Time 0.0003 :
+SELECT *
+FROM (`wvd_user`)
+WHERE `username` =  'Guarantor_11'
+AND `id` !=  '11'
+LIMIT 1
+
+
+Now : 2013-01-19 05:19:12.  Time 0.0002 :
+SELECT *
+FROM (`wvd_user`)
+WHERE `email` =  'Guarantor_11@mail.com'
+AND `id` !=  '11'
+LIMIT 1
+
+
+Now : 2013-01-19 05:19:12.  Time 0.0002 :
+SELECT *
+FROM (`wvd_user`)
+WHERE `passport` =  'passport_8'
+AND `id` !=  '11'
+LIMIT 1
+
+
+Now : 2013-01-19 05:19:12.  Time 0.0002 :
+SELECT *
+FROM (`wvd_user`)
+WHERE `dln` =  'dln_11'
+AND `id` !=  '11'
+LIMIT 1
+
+
+Now : 2013-01-19 05:19:13.  Time 0.0004 :
+SELECT *
+FROM (`wvd_user_notes`)
+WHERE `wvd_user_notes`.`user_id` =  '11'
+ORDER BY `created_at` desc
+
+
+Now : 2013-01-19 05:19:13.  Time 0.0003 :
+SELECT `wvd_tenant_guarantor`.*, `wvd_user`.`username`
+FROM (`wvd_tenant_guarantor`)
+RIGHT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_tenant_guarantor`.`guarantor_id`
+WHERE `wvd_tenant_guarantor`.`tenant_id` =  '11'
+ORDER BY `username`
+
+
+Now : 2013-01-19 05:19:13.  Time 0.0003 :
+SELECT `id`, `username`
+FROM (`wvd_user`)
+WHERE `type` =  'guarantor'
+ORDER BY `username`
+
+
+Now : 2013-01-19 05:19:45.  Time 0.0004 :
+SELECT *
+FROM (`wvd_user`)
+WHERE `id` =  '11'
+LIMIT 1
+
+
+Now : 2013-01-19 05:19:45.  Time 0.0003 :
+SELECT *
+FROM (`wvd_user`)
+WHERE `username` =  'Guarantor_11'
+AND `id` !=  '11'
+LIMIT 1
+
+
+Now : 2013-01-19 05:19:45.  Time 0.0002 :
+SELECT *
+FROM (`wvd_user`)
+WHERE `email` =  'Guarantor_11@mail.com'
+AND `id` !=  '11'
+LIMIT 1
+
+
+Now : 2013-01-19 05:19:45.  Time 0.0002 :
+SELECT *
+FROM (`wvd_user`)
+WHERE `passport` =  'passport_8'
+AND `id` !=  '11'
+LIMIT 1
+
+
+Now : 2013-01-19 05:19:45.  Time 0.0002 :
+SELECT *
+FROM (`wvd_user`)
+WHERE `dln` =  'dln_11'
+AND `id` !=  '11'
+LIMIT 1
+
+
+Now : 2013-01-19 05:19:46.  Time 0.0007 :
+SELECT *
+FROM (`wvd_user_notes`)
+WHERE `wvd_user_notes`.`user_id` =  '11'
+ORDER BY `created_at` desc
+
+
+Now : 2013-01-19 05:19:46.  Time 0.0004 :
+SELECT `wvd_tenant_guarantor`.*, `wvd_user`.`username`
+FROM (`wvd_tenant_guarantor`)
+RIGHT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_tenant_guarantor`.`guarantor_id`
+WHERE `wvd_tenant_guarantor`.`tenant_id` =  '11'
+ORDER BY `username`
+
+
+Now : 2013-01-19 05:19:46.  Time 0.0004 :
+SELECT `id`, `username`
+FROM (`wvd_user`)
+WHERE `type` =  'guarantor'
+ORDER BY `username`
+
+
+Now : 2013-01-19 05:27:57.  Time 0.0003 :
+SELECT *
+FROM (`wvd_user`)
+WHERE `id` =  '11'
+LIMIT 1
+
+
+Now : 2013-01-19 05:27:57.  Time 0.0003 :
+SELECT *
+FROM (`wvd_user`)
+WHERE `username` =  'Guarantor_11'
+AND `id` !=  '11'
+LIMIT 1
+
+
+Now : 2013-01-19 05:27:57.  Time 0.0002 :
+SELECT *
+FROM (`wvd_user`)
+WHERE `email` =  'Guarantor_11@mail.com'
+AND `id` !=  '11'
+LIMIT 1
+
+
+Now : 2013-01-19 05:27:57.  Time 0.0002 :
+SELECT *
+FROM (`wvd_user`)
+WHERE `passport` =  'passport_8'
+AND `id` !=  '11'
+LIMIT 1
+
+
+Now : 2013-01-19 05:27:57.  Time 0.0002 :
+SELECT *
+FROM (`wvd_user`)
+WHERE `dln` =  'dln_8'
+AND `id` !=  '11'
+LIMIT 1
+
+
+Now : 2013-01-19 05:27:57.  Time 0.0004 :
+SELECT `wvd_tenant_guarantor`.*, `wvd_user`.`username`
+FROM (`wvd_tenant_guarantor`)
+RIGHT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_tenant_guarantor`.`guarantor_id`
+WHERE `wvd_tenant_guarantor`.`tenant_id` =  '11'
+ORDER BY `username`
+
+
+Now : 2013-01-19 05:27:57.  Time 0.0004 :
+SELECT `id`, `username`
+FROM (`wvd_user`)
+WHERE `type` =  'guarantor'
+ORDER BY `username`
+
+
+Now : 2013-01-19 05:27:57.  Time 0.0005 :
+SELECT *
+FROM (`wvd_user_notes`)
+WHERE `wvd_user_notes`.`user_id` =  '11'
+ORDER BY `created_at` desc
+
+
+Now : 2013-01-19 05:28:00.  Time 0.0003 :
+SELECT *
+FROM (`wvd_user`)
+WHERE `id` =  '11'
+LIMIT 1
+
+
+Now : 2013-01-19 05:28:01.  Time 0.0005 :
+SELECT *
+FROM (`wvd_user_notes`)
+WHERE `wvd_user_notes`.`user_id` =  '11'
+ORDER BY `created_at` desc
+
+
+Now : 2013-01-19 05:28:01.  Time 0.0004 :
+SELECT `wvd_tenant_guarantor`.*, `wvd_user`.`username`
+FROM (`wvd_tenant_guarantor`)
+RIGHT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_tenant_guarantor`.`guarantor_id`
+WHERE `wvd_tenant_guarantor`.`tenant_id` =  '11'
+ORDER BY `username`
+
+
+Now : 2013-01-19 05:28:01.  Time 0.0004 :
+SELECT `id`, `username`
+FROM (`wvd_user`)
+WHERE `type` =  'guarantor'
+ORDER BY `username`
+
+
+Now : 2013-01-19 05:44:56.  Time 0.0003 :
+SELECT *
+FROM (`wvd_user`)
+WHERE `id` =  '11'
+LIMIT 1
+
+
+Now : 2013-01-19 05:44:56.  Time 0.0005 :
+SELECT *
+FROM (`wvd_user_notes`)
+WHERE `wvd_user_notes`.`user_id` =  '11'
+ORDER BY `created_at` desc
+
+
+Now : 2013-01-19 05:44:56.  Time 0.0005 :
+SELECT `wvd_tenant_guarantor`.*, `wvd_user`.`username`
+FROM (`wvd_tenant_guarantor`)
+RIGHT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_tenant_guarantor`.`guarantor_id`
+WHERE `wvd_tenant_guarantor`.`tenant_id` =  '11'
+ORDER BY `username`
+
+
+Now : 2013-01-19 05:44:56.  Time 0.0003 :
+SELECT `id`, `username`
+FROM (`wvd_user`)
+WHERE `type` =  'guarantor'
+ORDER BY `username`
+
+
+Now : 2013-01-19 05:45:09.  Time 0.0003 :
+SELECT *
+FROM (`wvd_user`)
+WHERE `id` =  '12'
+LIMIT 1
+
+
+Now : 2013-01-19 05:45:10.  Time 0.0006 :
+SELECT *
+FROM (`wvd_user_notes`)
+WHERE `wvd_user_notes`.`user_id` =  '12'
+ORDER BY `created_at` desc
+
+
+Now : 2013-01-19 05:45:10.  Time 0.0004 :
+SELECT `wvd_tenant_guarantor`.*, `wvd_user`.`username`
+FROM (`wvd_tenant_guarantor`)
+RIGHT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_tenant_guarantor`.`guarantor_id`
+WHERE `wvd_tenant_guarantor`.`tenant_id` =  '12'
+ORDER BY `username`
+
+
+Now : 2013-01-19 05:45:10.  Time 0.0006 :
+SELECT `id`, `username`
+FROM (`wvd_user`)
+WHERE `type` =  'guarantor'
+ORDER BY `username`
+
+
+Now : 2013-01-19 05:45:19.  Time 0.0003 :
+SELECT *
+FROM (`wvd_user`)
+WHERE `id` =  '8'
+LIMIT 1
+
+
+Now : 2013-01-19 05:45:19.  Time 0.0003 :
+SELECT *
+FROM (`wvd_user_notes`)
+WHERE `wvd_user_notes`.`user_id` =  '8'
+ORDER BY `created_at` desc
+
+
+Now : 2013-01-19 05:48:19.  Time 0.0003 :
+SELECT *
+FROM (`wvd_user`)
+WHERE `id` =  '8'
+LIMIT 1
+
+
+Now : 2013-01-19 05:48:19.  Time 0.0003 :
+SELECT *
+FROM (`wvd_user_notes`)
+WHERE `wvd_user_notes`.`user_id` =  '8'
+ORDER BY `created_at` desc
+
+
+Now : 2013-01-19 05:48:25.  Time 0.0003 :
+SELECT *
+FROM (`wvd_user`)
+WHERE `id` =  '11'
+LIMIT 1
+
+
+Now : 2013-01-19 05:48:26.  Time 0.0005 :
+SELECT *
+FROM (`wvd_user_notes`)
+WHERE `wvd_user_notes`.`user_id` =  '11'
+ORDER BY `created_at` desc
+
+
+Now : 2013-01-19 05:48:26.  Time 0.0004 :
+SELECT `wvd_tenant_guarantor`.*, `wvd_user`.`username`
+FROM (`wvd_tenant_guarantor`)
+RIGHT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_tenant_guarantor`.`guarantor_id`
+WHERE `wvd_tenant_guarantor`.`tenant_id` =  '11'
+ORDER BY `username`
+
+
+Now : 2013-01-19 05:48:26.  Time 0.0004 :
+SELECT `id`, `username`
+FROM (`wvd_user`)
+WHERE `type` =  'guarantor'
+ORDER BY `username`
+
+
+Now : 2013-01-19 05:50:32.  Time 0.0003 :
+SELECT *
+FROM (`wvd_user`)
+WHERE `id` =  '11'
+LIMIT 1
+
+
+Now : 2013-01-19 05:50:32.  Time 0.0004 :
+SELECT `wvd_tenant_guarantor`.*, `wvd_user`.`username`
+FROM (`wvd_tenant_guarantor`)
+RIGHT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_tenant_guarantor`.`guarantor_id`
+WHERE `wvd_tenant_guarantor`.`tenant_id` =  '11'
+ORDER BY `username`
+
+
+Now : 2013-01-19 05:50:32.  Time 0.0006 :
+Now : 2013-01-19 05:50:32.  Time 0.0005 :
+SELECT `id`, `username`
+FROM (`wvd_user`)
+WHERE `type` =  'guarantor'
+ORDER BY `username`
+
+
+SELECT *
+FROM (`wvd_user_notes`)
+WHERE `wvd_user_notes`.`user_id` =  '11'
+ORDER BY `created_at` desc
+
+
+Now : 2013-01-19 07:03:44.  Time 1.3735 :
+SELECT *
+FROM (`wvd_user`)
+WHERE `id` =  '11'
+LIMIT 1
+
+
+Now : 2013-01-19 07:03:47.  Time 0.0313 :
+SELECT *
+FROM (`wvd_user_notes`)
+WHERE `wvd_user_notes`.`user_id` =  '11'
+ORDER BY `created_at` desc
+
+
+Now : 2013-01-19 07:03:47.  Time 0.0752 :
+SELECT `wvd_tenant_guarantor`.*, `wvd_user`.`username`
+FROM (`wvd_tenant_guarantor`)
+RIGHT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_tenant_guarantor`.`guarantor_id`
+WHERE `wvd_tenant_guarantor`.`tenant_id` =  '11'
+ORDER BY `username`
+
+
+Now : 2013-01-19 07:03:47.  Time 0.0048 :
+SELECT `id`, `username`
+FROM (`wvd_user`)
+WHERE `type` =  'guarantor'
+ORDER BY `username`
+
+
+Now : 2013-01-19 10:48:47.  Time 0.0675 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_user`)
+ORDER BY `username`
+
+
+Now : 2013-01-19 10:48:47.  Time 0.0390 :
+SELECT `wvd_user`.*, ( select count(*) from `wvd_property` where `wvd_property`.`landlord_id` = `wvd_user`.`id`) as property_user_count
+FROM (`wvd_user`)
+ORDER BY `username`
+LIMIT 20
+
+
+Now : 2013-01-19 10:50:42.  Time 0.0003 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_user`)
+ORDER BY `created_at` asc
+
+
+Now : 2013-01-19 10:50:42.  Time 0.0006 :
+SELECT `wvd_user`.*, ( select count(*) from `wvd_property` where `wvd_property`.`landlord_id` = `wvd_user`.`id`) as property_user_count
+FROM (`wvd_user`)
+ORDER BY `created_at` asc
+LIMIT 20
+
+
+Now : 2013-01-19 10:50:43.  Time 0.0002 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_user`)
+ORDER BY `created_at` desc
+
+
+Now : 2013-01-19 10:50:43.  Time 0.0005 :
+SELECT `wvd_user`.*, ( select count(*) from `wvd_property` where `wvd_property`.`landlord_id` = `wvd_user`.`id`) as property_user_count
+FROM (`wvd_user`)
+ORDER BY `created_at` desc
+LIMIT 20
+
+
+Now : 2013-01-19 10:50:45.  Time 0.0002 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_user`)
+ORDER BY `last_name` asc
+
+
+Now : 2013-01-19 10:50:45.  Time 0.0004 :
+SELECT `wvd_user`.*, ( select count(*) from `wvd_property` where `wvd_property`.`landlord_id` = `wvd_user`.`id`) as property_user_count
+FROM (`wvd_user`)
+ORDER BY `last_name` asc
+LIMIT 20
+
+
+Now : 2013-01-19 10:50:46.  Time 0.0003 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_user`)
+ORDER BY `last_name` desc
+
+
+Now : 2013-01-19 10:50:46.  Time 0.0005 :
+SELECT `wvd_user`.*, ( select count(*) from `wvd_property` where `wvd_property`.`landlord_id` = `wvd_user`.`id`) as property_user_count
+FROM (`wvd_user`)
+ORDER BY `last_name` desc
+LIMIT 20
+
+
+Now : 2013-01-19 10:51:45.  Time 0.0004 :
+SELECT *
+FROM (`wvd_user`)
+WHERE `id` =  '5'
+LIMIT 1
+
+
+Now : 2013-01-19 10:51:45.  Time 0.0362 :
+SELECT *
+FROM (`wvd_user_notes`)
+WHERE `wvd_user_notes`.`user_id` =  '5'
+ORDER BY `created_at` desc
+
+
+Now : 2013-01-19 10:51:51.  Time 0.0004 :
+SELECT *
+FROM (`wvd_user`)
+WHERE `id` =  '15'
+LIMIT 1
+
+
+Now : 2013-01-19 10:51:51.  Time 0.0007 :
+SELECT *
+FROM (`wvd_user_notes`)
+WHERE `wvd_user_notes`.`user_id` =  '15'
+ORDER BY `created_at` desc
+
+
+Now : 2013-01-19 10:51:51.  Time 0.0160 :
+SELECT `wvd_tenant_guarantor`.*, `wvd_user`.`username`
+FROM (`wvd_tenant_guarantor`)
+RIGHT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_tenant_guarantor`.`guarantor_id`
+WHERE `wvd_tenant_guarantor`.`tenant_id` =  '15'
+ORDER BY `username`
+
+
+Now : 2013-01-19 10:51:51.  Time 0.0004 :
+SELECT `id`, `username`
+FROM (`wvd_user`)
+WHERE `type` =  'guarantor'
+ORDER BY `username`
+
+
+Now : 2013-01-19 10:54:18.  Time 0.0004 :
+SELECT `wvd_tenant_guarantor`.*, `wvd_user`.`username`
+FROM (`wvd_tenant_guarantor`)
+RIGHT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_tenant_guarantor`.`guarantor_id`
+WHERE `wvd_tenant_guarantor`.`tenant_id` =  '15'
+ORDER BY `username`
+
+
+Now : 2013-01-19 10:54:18.  Time 0.0004 :
+SELECT `id`, `username`
+FROM (`wvd_user`)
+WHERE `type` =  'guarantor'
+ORDER BY `username`
+
+
+Now : 2013-01-19 10:54:18.  Time 0.0003 :
+SELECT DISTINCT `guarantor_id`
+FROM (`wvd_tenant_guarantor`)
+
+
+Now : 2013-01-19 10:55:06.  Time 0.0003 :
+SELECT *
+FROM (`wvd_user`)
+WHERE `id` =  '8'
+LIMIT 1
+
+
+Now : 2013-01-19 10:55:06.  Time 0.0004 :
+SELECT *
+FROM (`wvd_user_notes`)
+WHERE `wvd_user_notes`.`user_id` =  '8'
+ORDER BY `created_at` desc
+
+
+Now : 2013-01-19 10:55:14.  Time 0.0003 :
+SELECT *
+FROM (`wvd_user`)
+WHERE `id` =  '1'
+LIMIT 1
+
+
+Now : 2013-01-19 10:55:14.  Time 0.0004 :
+SELECT *
+FROM (`wvd_user_notes`)
+WHERE `wvd_user_notes`.`user_id` =  '1'
+ORDER BY `created_at` desc
+
+
+Now : 2013-01-19 10:55:14.  Time 0.0005 :
+SELECT `wvd_tenant_guarantor`.*, `wvd_user`.`username`
+FROM (`wvd_tenant_guarantor`)
+RIGHT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_tenant_guarantor`.`guarantor_id`
+WHERE `wvd_tenant_guarantor`.`tenant_id` =  '1'
+ORDER BY `username`
+
+
+Now : 2013-01-19 10:55:14.  Time 0.0004 :
+SELECT `id`, `username`
+FROM (`wvd_user`)
+WHERE `type` =  'guarantor'
+ORDER BY `username`
+
+
+Now : 2013-01-19 10:55:14.  Time 0.0003 :
+SELECT DISTINCT `guarantor_id`
+FROM (`wvd_tenant_guarantor`)
+
+

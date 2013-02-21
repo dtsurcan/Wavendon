@@ -1,0 +1,73 @@
+.clear {
+    clear: both;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#login {
+    width: 300px;
+    margin: 200px auto 0;
+    background: #DDD; /* Old browsers */padding: 20px;
+}
+
+#login input[type="text"], #login input[type="password"] {
+    width: 100%;
+    font-size: 16px;
+    padding: 4px 6px;
+    border: 1px #CCC solid;
+    background: #eeeeee; /* Old browsers */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+#login input[type="text"]:focus, #login input[type="password"]:focus {
+    background: #FFF;
+}
+
+#login input[type="submit"] {
+    margin-top: 20px;
+    color: #333;
+    border: 1px #CCC solid;
+    background: #EEE;
+    width: 300px;
+    padding: 8px 6px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    -webkit-box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2);        
+    box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2);
+}
+
+#login input[type="submit"]:hover {    
+    background: #FFF;
+}
+
+#main {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#header {
+    padding: 10px 0;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#left-column {
+    width: 220px;
+    height: 700px;
+    float: left;
+    background: #EEE;
+    padding: 20px;
+}
+
+#content {
+    width: 700px;
+    height: 700px;
+    float: left;
+}

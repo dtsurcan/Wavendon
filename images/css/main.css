@@ -1,0 +1,316 @@
+body,input {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+    background: #eee;
+    color: #585858;
+}
+
+body{overflow:auto;height:100%;}
+
+ul.error_list {
+  COLOR: red;
+  list-style:none;
+}
+
+.user_error {
+  COLOR: red;
+  display:inline;
+}
+
+.error {
+  COLOR: red;
+}
+
+.flash_message {
+  COLOR: #008080;
+  font-weight: bold;
+}
+
+span.user_error {
+  COLOR: red;
+  display:inline;
+}
+
+span.error {
+  COLOR: red;
+}
+
+.admin_row_even {
+  background-color: #fbfbfa;
+  line-height: 1.2em;
+  color: #714949;
+  cellspacing:2px;
+  cellpadding:2px;
+}
+.admin_row_odd {
+  background-color: #E4E4E4;
+  line-height: 1.2em;
+  COLOR: #3e3e3e;
+  cellspacing:2px;
+  cellpadding:2px;
+}
+.admin_row_hover {
+  background-color: #fffaa2;
+  line-height: 1.2em;
+  COLOR: #333;
+}
+
+
+.row_even {
+  background-color: #fbfbfa;
+  line-height: 1.2em;
+  color: #714949;
+  cellspacing:2px;
+  cellpadding:2px;
+}
+.row_odd {
+  background-color: #E4E4E4;
+  line-height: 1.2em;
+  COLOR: #3e3e3e;
+  cellspacing:2px;
+  cellpadding:2px;
+}
+.row_hover {
+  background-color: #fffaa2;
+  line-height: 1.2em;
+  COLOR: #333;
+}
+
+.readonly_field {
+  border: 1px dotted gray;
+}
+
+
+
+.current_admin_menu {
+  font-weight: bold;
+  COLOR: maroon;
+  padding: 20px 50x 20px 50x;
+  margin-left:30px;
+  margin-right:30px;
+}
+
+.admin_menu {
+  font-weight: normal;
+  COLOR: maroon;
+  margin-left:10px;
+  margin-right:10px;
+}
+
+	/* Menu Begin */
+
+#menu {
+	width: 960px;
+	height: 30px;
+	margin: 0 auto;
+	border-bottom:solid 1px #777;
+	color:#008080;
+}
+
+#menu ul {
+	margin-left:70px;
+	list-style: none;
+	height:20px;
+	color:#008080;
+}
+
+#menu li { float: left; }
+
+#menu a {
+	display: block;
+	height: 20px;
+	color:#333;
+	padding: 10px 20px 0px 20px;
+	text-decoration: none; text-align: center; text-transform: uppercase;
+  border-right:solid 1px #fff;
+	font-family:Helvetica,Arial,sans-serif;
+	font-size:11px; font-weight: bold;
+	line-height::20px;
+}
+
+#menu .first-item a { border-left:solid 1px #fff; }
+
+
+/* Menu End */
+
+
+.mainpage-menu {
+margin: 5px auto;
+width: 680px;
+}
+
+.mainpage-menu legend {
+font-size: 16px;
+color: #97271a;
+text-shadow: #333 0.1em 0.1em 0.2em
+}
+
+.mainpage-menu fieldset {
+width: 300px;
+margin-bottom: 15px;
+border: 1px solid #c7c7c7
+}
+
+.mainpage-menu a {
+display: block;
+font-size: 14px;
+padding-left: 18px;
+color: #333;
+font-weight: bold;
+line-height: 180%;
+border-bottom: 1px dotted #c7c7c7
+ }
+
+.mainpage-menu a:hover {
+color:#008080
+}
+
+.TabLink_Current {
+  font-weight: bold;
+}
+.TabLink {
+  font-weight: normal;
+}
+
+
+.Title {
+   font-size:16px;
+	 color: #585858;
+	 padding:0px 0 0 20px;
+	 height:34px;
+	 line-height:34px;
+}
+
+.ListTitle {
+   font-size:16px;
+	 color: #585858;
+	 padding:0px 0 10px 20px;
+	 height:34px;
+	 line-height:34px;
+}
+
+.EditorTitle {
+	 font-size:16px;
+	 color: #585858;
+	 padding:0px 0 10px 20px;
+	 height:34px;
+	 line-height:34px;
+}
+
+.Table_Editor_Conteiner {
+  border: 0px dotted yellow;
+}
+
+.left td{
+  align:left;
+  valign:top;
+	cellspacing:2px;
+	cellpadding:2px;
+}
+
+.right td{
+  align:right;
+  valign:top;
+	cellspacing:2px;
+	cellpadding:2px;
+}
+
+.Table_Filter td{
+	 padding: 2px 10px 2px 10px;
+}
+
+.Table_List {
+	align:left;
+	cellspacing:2px;
+	cellpadding:2px;
+	border:solid 1px #888;
+}
+
+.Table_List th {
+	background:#999999;
+	text-transform:lowercase;
+	font-weight:bold;
+	color:#fff;
+	padding:4px;
+}
+
+	.Table_List th a {color:#fff;font-weight:bold;}
+
+    .Table_List td { padding-top:3px; padding-bottom:3px;}
+	.Table_List td a { color: #7f7f7f; text-decoration:none; }
+
+    .Table_List a:hover { text-decoration:none; color:#000; }
+
+/* nothing-found  by filtering */
+	.nothing-found
+	{
+	   text-align:center;
+	   font-size:14px;
+	   font-weight:bold;
+	   color:#666666;
+	   margin-top:25px;
+	}
+
+
+
+.ac_results {
+	padding: 0px;
+	border: 1px solid black;
+	background-color: white;
+	overflow: hidden;
+	z-index: 99999;
+}
+
+.ac_results ul {
+	width: 100%;
+	list-style-position: outside;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.ac_results li {
+	margin: 0px;
+	padding: 2px 5px;
+	cursor: default;
+	display: block;
+	/*
+	if width will be 100% horizontal scrollbar will apear
+	when scroll mode will be used
+	*/
+	/*width: 100%;*/
+	font: menu;
+	font-size: 12px;
+	/*
+	it is very important, if line-height not setted or setted
+	in relative units scroll will be broken in firefox
+	*/
+	line-height: 16px;
+	overflow: hidden;
+}
+
+.ac_loading {
+	background: white url('../images/indicator.gif') right center no-repeat;
+}
+
+.ac_odd {
+	background-color: #eee;
+}
+
+.ac_over {
+	background-color: #0A246A;
+	color: white;
+}
+
+.ac_input {
+	// background-color: gray;
+	// color: white;
+}
+
+.recruit_last_name {
+	font-weight: bold;
+}
+
+.recruit_city {
+	font-style: italic;
+}

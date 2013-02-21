@@ -1,0 +1,746 @@
+Now : 2013-02-20 15:11:45.  Time 0.1823 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+
+
+Now : 2013-02-20 15:11:46.  Time 0.7921 :
+SELECT `wvd_property`.*, `wvd_user`.`username`, `wvd_block`.`name` as block_name
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+LIMIT 20
+
+
+Now : 2013-02-20 15:11:54.  Time 0.0003 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+
+
+Now : 2013-02-20 15:11:54.  Time 0.0006 :
+SELECT `wvd_property`.*, `wvd_user`.`username`, `wvd_block`.`name` as block_name
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+LIMIT 20
+
+
+Now : 2013-02-20 15:11:58.  Time 0.0001 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+
+
+Now : 2013-02-20 15:11:58.  Time 0.0002 :
+SELECT `wvd_property`.*, `wvd_user`.`username`, `wvd_block`.`name` as block_name
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+LIMIT 20
+
+
+Now : 2013-02-20 15:12:08.  Time 0.0002 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+
+
+Now : 2013-02-20 15:12:08.  Time 0.0001 :
+SELECT `wvd_property`.*, `wvd_user`.`username`, `wvd_block`.`name` as block_name
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+LIMIT 20
+
+
+Now : 2013-02-20 15:12:17.  Time 0.0074 :
+SELECT `id`, `username`
+FROM (`wvd_user`)
+WHERE `type` =  'landlord'
+ORDER BY `username`
+
+
+Now : 2013-02-20 15:12:17.  Time 0.0005 :
+SELECT `id`, `name`
+FROM (`wvd_block`)
+ORDER BY `name`
+
+
+Now : 2013-02-20 15:12:17.  Time 0.0175 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_room`)
+WHERE `property_id` =  '23'
+ORDER BY `name`
+
+
+Now : 2013-02-20 15:12:17.  Time 0.0005 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_room`)
+WHERE `property_id` =  '23'
+AND `status` =  'A'
+ORDER BY `name`
+
+
+Now : 2013-02-20 15:12:17.  Time 0.0005 :
+SELECT `wvd_property`.*, `wvd_user`.`username`, `wvd_block`.`name` as block_name
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+WHERE `wvd_property`.`id` =  '23'
+LIMIT 1
+
+
+Now : 2013-02-20 15:12:17.  Time 0.0429 :
+SELECT `wvd_property_feature`.*, `wvd_feature`.`name` as feature_name
+FROM (`wvd_property_feature`)
+LEFT JOIN `wvd_feature` ON `wvd_feature`.`id` = `wvd_property_feature`.`feature_id`
+WHERE `property_id` =  '23'
+ORDER BY `property_id`
+
+
+Now : 2013-02-20 15:12:17.  Time 0.0054 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_room`)
+WHERE `property_id` =  '23'
+ORDER BY `name`
+
+
+Now : 2013-02-20 15:12:17.  Time 0.0347 :
+SELECT `wvd_room`.*, ( select count(*) from `wvd_room_photo` where `wvd_room_photo`.`room_id` = `wvd_room`.`id`) as room_photo_room_count, `wvd_room`.*, ( select count(*) from `wvd_room_tenant` where `wvd_room_tenant`.`room_id` = `wvd_room`.`id`) as room_tenant_room_count
+FROM (`wvd_room`)
+WHERE `property_id` =  '23'
+ORDER BY `status`, `name`
+
+
+Now : 2013-02-20 15:12:27.  Time 0.0002 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+
+
+Now : 2013-02-20 15:12:27.  Time 0.0004 :
+SELECT `wvd_property`.*, `wvd_user`.`username`, `wvd_block`.`name` as block_name
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+LIMIT 20
+
+
+Now : 2013-02-20 15:43:18.  Time 0.0002 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+
+
+Now : 2013-02-20 15:43:18.  Time 0.0001 :
+SELECT `wvd_property`.*, `wvd_user`.`username`, `wvd_block`.`name` as block_name
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+LIMIT 20
+
+
+Now : 2013-02-20 15:44:35.  Time 0.0002 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+
+
+Now : 2013-02-20 15:44:35.  Time 0.0001 :
+SELECT `wvd_property`.*, `wvd_user`.`username`, `wvd_block`.`name` as block_name
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+LIMIT 20
+
+
+Now : 2013-02-20 15:44:37.  Time 0.0002 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+
+
+Now : 2013-02-20 15:44:37.  Time 0.0004 :
+SELECT `wvd_property`.*, `wvd_user`.`username`, `wvd_block`.`name` as block_name
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+LIMIT 20
+
+
+Now : 2013-02-20 15:44:38.  Time 0.0001 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+
+
+Now : 2013-02-20 15:44:38.  Time 0.0001 :
+SELECT `wvd_property`.*, `wvd_user`.`username`, `wvd_block`.`name` as block_name
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+LIMIT 20
+
+
+Now : 2013-02-20 15:44:39.  Time 0.0001 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+
+
+Now : 2013-02-20 15:44:39.  Time 0.0001 :
+SELECT `wvd_property`.*, `wvd_user`.`username`, `wvd_block`.`name` as block_name
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+LIMIT 20
+
+
+Now : 2013-02-20 15:44:40.  Time 0.0002 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+
+
+Now : 2013-02-20 15:44:40.  Time 0.0002 :
+SELECT `wvd_property`.*, `wvd_user`.`username`, `wvd_block`.`name` as block_name
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+LIMIT 20
+
+
+Now : 2013-02-20 15:44:41.  Time 0.0001 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+
+
+Now : 2013-02-20 15:44:41.  Time 0.0001 :
+SELECT `wvd_property`.*, `wvd_user`.`username`, `wvd_block`.`name` as block_name
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+LIMIT 20
+
+
+Now : 2013-02-20 15:44:41.  Time 0.0009 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+
+
+Now : 2013-02-20 15:44:41.  Time 0.0005 :
+SELECT `wvd_property`.*, `wvd_user`.`username`, `wvd_block`.`name` as block_name
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+LIMIT 20
+
+
+Now : 2013-02-20 15:44:42.  Time 0.0006 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+
+
+Now : 2013-02-20 15:44:42.  Time 0.0011 :
+SELECT `wvd_property`.*, `wvd_user`.`username`, `wvd_block`.`name` as block_name
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+LIMIT 20
+
+
+Now : 2013-02-20 15:44:43.  Time 0.0016 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+
+
+Now : 2013-02-20 15:44:43.  Time 0.0010 :
+SELECT `wvd_property`.*, `wvd_user`.`username`, `wvd_block`.`name` as block_name
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+LIMIT 20
+
+
+Now : 2013-02-20 16:46:08.  Time 0.0811 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+
+
+Now : 2013-02-20 16:46:08.  Time 0.0235 :
+SELECT `wvd_property`.*, `wvd_user`.`username`, `wvd_block`.`name` as block_name
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+LIMIT 20
+
+
+Now : 2013-02-20 16:46:58.  Time 0.0003 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+
+
+Now : 2013-02-20 16:46:58.  Time 0.0002 :
+SELECT `wvd_property`.*, `wvd_user`.`username`, `wvd_block`.`name` as block_name
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+LIMIT 20
+
+
+Now : 2013-02-20 16:47:26.  Time 0.0002 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+
+
+Now : 2013-02-20 16:47:26.  Time 0.0001 :
+SELECT `wvd_property`.*, `wvd_user`.`username`, `wvd_block`.`name` as block_name
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+LIMIT 20
+
+
+Now : 2013-02-20 16:50:18.  Time 0.0003 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+
+
+Now : 2013-02-20 16:50:18.  Time 0.0002 :
+SELECT `wvd_property`.*, `wvd_user`.`username`, `wvd_block`.`name` as block_name
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+LIMIT 20
+
+
+Now : 2013-02-20 16:50:19.  Time 0.0003 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+
+
+Now : 2013-02-20 16:50:20.  Time 0.0003 :
+SELECT `wvd_property`.*, `wvd_user`.`username`, `wvd_block`.`name` as block_name
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+LIMIT 20
+
+
+Now : 2013-02-20 16:50:21.  Time 0.0002 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+
+
+Now : 2013-02-20 16:50:21.  Time 0.0003 :
+SELECT `wvd_property`.*, `wvd_user`.`username`, `wvd_block`.`name` as block_name
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+LIMIT 20
+
+
+Now : 2013-02-20 16:50:23.  Time 0.0002 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+
+
+Now : 2013-02-20 16:50:23.  Time 0.0002 :
+SELECT `wvd_property`.*, `wvd_user`.`username`, `wvd_block`.`name` as block_name
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+LIMIT 20
+
+
+Now : 2013-02-20 16:50:24.  Time 0.0002 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+
+
+Now : 2013-02-20 16:50:24.  Time 0.0001 :
+SELECT `wvd_property`.*, `wvd_user`.`username`, `wvd_block`.`name` as block_name
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+LIMIT 20
+
+
+Now : 2013-02-20 16:50:26.  Time 0.0002 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+
+
+Now : 2013-02-20 16:50:26.  Time 0.0001 :
+SELECT `wvd_property`.*, `wvd_user`.`username`, `wvd_block`.`name` as block_name
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+LIMIT 20
+
+
+Now : 2013-02-20 16:50:26.  Time 0.0003 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+
+
+Now : 2013-02-20 16:50:26.  Time 0.0002 :
+SELECT `wvd_property`.*, `wvd_user`.`username`, `wvd_block`.`name` as block_name
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+LIMIT 20
+
+
+Now : 2013-02-20 16:50:28.  Time 0.0003 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+
+
+Now : 2013-02-20 16:50:28.  Time 0.0003 :
+SELECT `wvd_property`.*, `wvd_user`.`username`, `wvd_block`.`name` as block_name
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+LIMIT 20
+
+
+Now : 2013-02-20 16:50:29.  Time 0.0002 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+
+
+Now : 2013-02-20 16:50:29.  Time 0.0008 :
+SELECT `wvd_property`.*, `wvd_user`.`username`, `wvd_block`.`name` as block_name
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+LIMIT 20
+
+
+Now : 2013-02-20 16:50:29.  Time 0.0004 :
+SELECT `id`, `username`
+FROM (`wvd_user`)
+WHERE `type` =  'landlord'
+ORDER BY `username`
+
+
+Now : 2013-02-20 16:50:29.  Time 0.0002 :
+SELECT `id`, `name`
+FROM (`wvd_block`)
+ORDER BY `name`
+
+
+Now : 2013-02-20 16:50:30.  Time 0.0086 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_room`)
+WHERE `property_id` =  '8'
+ORDER BY `name`
+
+
+Now : 2013-02-20 16:50:30.  Time 0.0006 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_room`)
+WHERE `property_id` =  '8'
+AND `status` =  'A'
+ORDER BY `name`
+
+
+Now : 2013-02-20 16:50:30.  Time 0.0004 :
+SELECT `wvd_property`.*, `wvd_user`.`username`, `wvd_block`.`name` as block_name
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+WHERE `wvd_property`.`id` =  '8'
+LIMIT 1
+
+
+Now : 2013-02-20 16:50:30.  Time 0.0004 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_room`)
+WHERE `property_id` =  '8'
+ORDER BY `name`
+
+
+Now : 2013-02-20 16:50:30.  Time 0.1199 :
+SELECT `wvd_property_feature`.*, `wvd_feature`.`name` as feature_name
+FROM (`wvd_property_feature`)
+LEFT JOIN `wvd_feature` ON `wvd_feature`.`id` = `wvd_property_feature`.`feature_id`
+WHERE `property_id` =  '8'
+ORDER BY `property_id`
+
+
+Now : 2013-02-20 16:50:30.  Time 0.1694 :
+SELECT `wvd_room`.*, ( select count(*) from `wvd_room_photo` where `wvd_room_photo`.`room_id` = `wvd_room`.`id`) as room_photo_room_count, `wvd_room`.*, ( select count(*) from `wvd_room_tenant` where `wvd_room_tenant`.`room_id` = `wvd_room`.`id`) as room_tenant_room_count
+FROM (`wvd_room`)
+WHERE `property_id` =  '8'
+ORDER BY `status`, `name`
+
+
+Now : 2013-02-20 16:50:40.  Time 0.0002 :
+SELECT `id`, `username`
+FROM (`wvd_user`)
+WHERE `type` =  'landlord'
+ORDER BY `username`
+
+
+Now : 2013-02-20 16:50:40.  Time 0.0001 :
+SELECT `id`, `name`
+FROM (`wvd_block`)
+ORDER BY `name`
+
+
+Now : 2013-02-20 16:50:40.  Time 0.0004 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_room`)
+WHERE `property_id` =  '28'
+ORDER BY `name`
+
+
+Now : 2013-02-20 16:50:40.  Time 0.0002 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_room`)
+WHERE `property_id` =  '28'
+AND `status` =  'A'
+ORDER BY `name`
+
+
+Now : 2013-02-20 16:50:40.  Time 0.0003 :
+SELECT `wvd_property`.*, `wvd_user`.`username`, `wvd_block`.`name` as block_name
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+WHERE `wvd_property`.`id` =  '28'
+LIMIT 1
+
+
+Now : 2013-02-20 16:50:40.  Time 0.0009 :
+SELECT `wvd_property_feature`.*, `wvd_feature`.`name` as feature_name
+FROM (`wvd_property_feature`)
+LEFT JOIN `wvd_feature` ON `wvd_feature`.`id` = `wvd_property_feature`.`feature_id`
+WHERE `property_id` =  '28'
+ORDER BY `property_id`
+
+
+Now : 2013-02-20 16:50:40.  Time 0.0007 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_room`)
+WHERE `property_id` =  '28'
+ORDER BY `name`
+
+
+Now : 2013-02-20 16:50:40.  Time 0.0010 :
+SELECT `wvd_room`.*, ( select count(*) from `wvd_room_photo` where `wvd_room_photo`.`room_id` = `wvd_room`.`id`) as room_photo_room_count, `wvd_room`.*, ( select count(*) from `wvd_room_tenant` where `wvd_room_tenant`.`room_id` = `wvd_room`.`id`) as room_tenant_room_count
+FROM (`wvd_room`)
+WHERE `property_id` =  '28'
+ORDER BY `status`, `name`
+
+
+Now : 2013-02-20 16:53:53.  Time 0.0001 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+
+
+Now : 2013-02-20 16:53:53.  Time 0.0002 :
+SELECT `wvd_property`.*, `wvd_user`.`username`, `wvd_block`.`name` as block_name
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+LIMIT 20
+
+
+Now : 2013-02-20 17:21:18.  Time 0.0001 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+
+
+Now : 2013-02-20 17:21:18.  Time 0.0001 :
+SELECT `wvd_property`.*, `wvd_user`.`username`, `wvd_block`.`name` as block_name
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+LIMIT 20
+
+
+Now : 2013-02-20 17:21:42.  Time 0.0006 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+
+
+Now : 2013-02-20 17:21:42.  Time 0.0001 :
+SELECT `wvd_property`.*, `wvd_user`.`username`, `wvd_block`.`name` as block_name
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+ORDER BY `username`, `address`
+LIMIT 20
+
+
+Now : 2013-02-20 17:21:46.  Time 0.0002 :
+SELECT `id`, `username`
+FROM (`wvd_user`)
+WHERE `type` =  'landlord'
+ORDER BY `username`
+
+
+Now : 2013-02-20 17:21:46.  Time 0.0001 :
+SELECT `id`, `name`
+FROM (`wvd_block`)
+ORDER BY `name`
+
+
+Now : 2013-02-20 17:21:46.  Time 0.0004 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_room`)
+WHERE `property_id` =  '26'
+ORDER BY `name`
+
+
+Now : 2013-02-20 17:21:46.  Time 0.0002 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_room`)
+WHERE `property_id` =  '26'
+AND `status` =  'A'
+ORDER BY `name`
+
+
+Now : 2013-02-20 17:21:46.  Time 0.0003 :
+SELECT `wvd_property`.*, `wvd_user`.`username`, `wvd_block`.`name` as block_name
+FROM (`wvd_property`)
+LEFT JOIN `wvd_user` ON `wvd_user`.`id` = `wvd_property`.`landlord_id`
+LEFT JOIN `wvd_block` ON `wvd_block`.`id` = `wvd_property`.`block_id`
+WHERE `wvd_property`.`id` =  '26'
+LIMIT 1
+
+
+Now : 2013-02-20 17:21:46.  Time 0.0073 :
+SELECT `wvd_property_feature`.*, `wvd_feature`.`name` as feature_name
+FROM (`wvd_property_feature`)
+LEFT JOIN `wvd_feature` ON `wvd_feature`.`id` = `wvd_property_feature`.`feature_id`
+WHERE `property_id` =  '26'
+ORDER BY `property_id`
+
+
+Now : 2013-02-20 17:21:46.  Time 0.0004 :
+SELECT COUNT(*) AS `numrows`
+FROM (`wvd_room`)
+WHERE `property_id` =  '26'
+ORDER BY `name`
+
+
+Now : 2013-02-20 17:21:46.  Time 0.0012 :
+SELECT `wvd_room`.*, ( select count(*) from `wvd_room_photo` where `wvd_room_photo`.`room_id` = `wvd_room`.`id`) as room_photo_room_count, `wvd_room`.*, ( select count(*) from `wvd_room_tenant` where `wvd_room_tenant`.`room_id` = `wvd_room`.`id`) as room_tenant_room_count
+FROM (`wvd_room`)
+WHERE `property_id` =  '26'
+ORDER BY `status`, `name`
+
+
